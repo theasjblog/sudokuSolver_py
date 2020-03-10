@@ -1,6 +1,7 @@
 # imports
 
 import os
+import imageio
 import numpy as np
 from skimage import io
 from skimage.color import rgb2gray
@@ -15,7 +16,7 @@ get_ipython().run_line_magic('matplotlib', 'inline')
 
 # get grayscale image
 def readImg(filePath):
-    imgOr = io.imread(filePath)
+    imgOr = imageio.imread(filePath)
     img = rgb2gray(imgOr)
     return(img)
 
