@@ -105,12 +105,12 @@ def checkSquare(grid):
 # wrapper to call all the the check funcitons
 def validateGrid(grid):
     if not grid.shape == (9,9):
-        print('wrong shape')
+        #print('wrong shape')
         return(False)
     rows = all(np.apply_along_axis(lineCheck, 0, grid))
     cols = all(np.apply_along_axis(lineCheck, 1, grid))
     if( not rows or not cols):
-        print('duplicates in rows or cols')
+        #print('duplicates in rows or cols')
         return(False)
     gridCoord = [0,3,6]
     checkSquareRes = []
@@ -122,7 +122,7 @@ def validateGrid(grid):
     
     checkSquareRes = all(checkSquareRes)
     if( not checkSquareRes):
-        print('duplicates in square')
+        #print('duplicates in square')
         return(False)
     
     return(True)
