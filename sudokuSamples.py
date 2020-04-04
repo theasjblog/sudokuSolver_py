@@ -35,7 +35,7 @@ pairSudoku[3,0] = 2
 pairSudoku[3,1] = 1 
 pairSudoku[6,2] = 1
 
-					
+	
 # row 0, col 0, 1 and 6 are triplets
 #not solvable but can test triplets
 tripSudoku = np.zeros((9,9))
@@ -104,3 +104,63 @@ quadSudoku[4,2] = 7
 quadSudoku[2,6] = 7
 quadSudoku[2,3] = 3
 quadSudoku[6,1] = 8
+
+# hidden pair in [2,0], [2,2]
+hidden2Sudoku = np.zeros((9,9))
+hidden2Sudoku[0,0] = 3
+hidden2Sudoku[0,2] = 1
+hidden2Sudoku[1,1] = 2
+hidden2Sudoku[0,3] = 6
+hidden2Sudoku[0,4] = 7
+hidden2Sudoku[0,5] = 9
+hidden2Sudoku[1,6] = 6
+hidden2Sudoku[1,3] = 8
+hidden2Sudoku[1,7] = 9
+hidden2Sudoku[3,2] = 7
+hidden2Sudoku[2,3] = 4
+hidden2Sudoku[2,4] = 5
+hidden2Sudoku[3,1] = 6
+hidden2Sudoku[4,1] = 9
+
+# hidden 3 in [1,0], [1,1], [2,0] = 2,6,8	
+hidden3Sudoku = np.zeros((9,9))
+hidden3Sudoku[2,1] = 5
+hidden3Sudoku[0,3] = 1
+hidden3Sudoku[0,4] = 2
+hidden3Sudoku[0,5] = 6
+hidden3Sudoku[0,6] = 8
+hidden3Sudoku[1,3] = 3
+hidden3Sudoku[2,3] = 8
+hidden3Sudoku[3,0] = 3
+hidden3Sudoku[4,0] = 9
+hidden3Sudoku[6,1] = 3
+hidden3Sudoku[3,2] = 7
+hidden3Sudoku[3,1] = 1
+hidden3Sudoku[4,2] = 2
+hidden3Sudoku[5,2] = 6
+hidden3Sudoku[6,2] = 8
+
+# hidden 4 in [6,1], [6,2], [7,1], [7,2] = 2,4,5,8
+hidden4Sudoku = np.zeros((9,9))
+hidden4Sudoku[0,3] = 5
+hidden4Sudoku[2,3] = 2
+hidden4Sudoku[4,3] = 4
+hidden4Sudoku[5,3] = 8
+hidden4Sudoku[0,4] = 7
+hidden4Sudoku[4,4] = 9
+hidden4Sudoku[0,5] = 3
+hidden4Sudoku[2,5] = 9
+hidden4Sudoku[4,5] = 6
+hidden4Sudoku[6,0] = 2
+hidden4Sudoku[6,1] = 7
+hidden4Sudoku[6,2] = 9
+hidden4Sudoku[7,0] = 1
+hidden4Sudoku[7,1] = 3
+hidden4Sudoku[7,2] = 8
+hidden4Sudoku[8,0] = 5
+hidden4Sudoku[8,1] = 6
+hidden4Sudoku[8,2] = 4
+hidden4Sudoku[6,8] = 1
+hidden4Sudoku[7,7] = 7
+hidden4Sudoku[8,7] = 8
+hidden4Sudoku[8,8] = 2
